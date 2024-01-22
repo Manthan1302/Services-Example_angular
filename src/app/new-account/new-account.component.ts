@@ -7,7 +7,7 @@ import { LoggingService } from '../logging.service';
   selector: 'app-new-account',
   templateUrl: './new-account.component.html',
   styleUrls: ['./new-account.component.css'],
-  // providers :[LoggingService]
+  // providers :[AccountService]
 })
 export class NewAccountComponent {
 
@@ -21,6 +21,8 @@ export class NewAccountComponent {
     //call method of account services
     this.accountScrvice.addAccount(accountName, accountstatus)
     // this.logginservice.logstatusChanged(accountName)
+    
+    
 
   }
 }

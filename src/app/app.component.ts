@@ -6,6 +6,7 @@ import { AccountService } from './account.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+  providers:[AccountService]
  
 })
 export class AppComponent implements OnInit{
@@ -14,6 +15,7 @@ export class AppComponent implements OnInit{
 
   ngOnInit() {
     this.accounts = this.accountservices.accounts;
-    console.log(this.accounts);
+    // console.log(this.accounts);
   }
+
 }

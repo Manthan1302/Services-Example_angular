@@ -18,7 +18,7 @@ import { LoggingService } from './logging.service';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [AccountService,LoggingService],
+  providers: [LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
